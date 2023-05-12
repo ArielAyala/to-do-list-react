@@ -1,11 +1,12 @@
 
 import React from 'react';
 import './App.css';
-import { TodoCounter } from './TodoCounter';
-import { TodoSearch } from './TodoSearch';
-import { TodoList } from './TodoList';
-import { TodoItem } from './TodoItem';
-import { CreateTotoButton } from './CreateTotoButton';
+import { TodoCounter } from './components/TodoCounter/TodoCounter';
+import { TodoSearch } from './components/TodoSearch/TodoSearch';
+import { TodoList } from './components/TodoList/TodoList';
+import { TodoItem } from './components/TodoItem/TodoItem';
+import { CreateTotoButton } from './components/CreateTodoButton/CreateTotoButton';
+
 
 
 const defaultItems = [
@@ -14,10 +15,12 @@ const defaultItems = [
   {text: 'Read book', completed: true},
 ];
 
+const completedItems = defaultItems.filter(item => item.completed);
+
 function App() {
   return (
     <React.Fragment>
-      <TodoCounter completed={1} total={8} />
+      <TodoCounter completed={completedItems.length} total={defaultItems.length} />
       <TodoSearch />
       <TodoList>
         {defaultItems.map((item,index)=>(
