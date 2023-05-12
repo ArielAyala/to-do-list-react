@@ -1,8 +1,8 @@
 import React from 'react'
 
-function TodoItem() {
+function TodoItem({text, completed}) {
     return (
-        <li>Item</li>
+        <li>{completed ? '[x]' : '[ ]'}{text}</li>
     )
 }
 
