@@ -1,0 +1,35 @@
+.todo-item {
+    list-style: none;
+    width: 80%;
+    height: 40px;
+    margin: 5px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-item .check-active {
+    cursor: pointer;
+    background: url("../../assets/check-active.svg") no-repeat;
+    background-size: 90%;
+    background-position: center center;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.todo-item p {
+    width: 90%;
+}
+
+.todo-item .close-button {
+    cursor: pointer;
+    background: url("../../assets/buttonx.svg") no-repeat;
+    ;
+    background-size: 90%;
+    background-position: center center;
+    width: 25px;
+    height: 25px;
+    border: none;
+}
