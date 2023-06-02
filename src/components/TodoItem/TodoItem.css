@@ -19,6 +19,16 @@
     border: none;
 }
 
+.todo-item .check-done {
+    cursor: pointer;
+    background: url("../../assets/check-done.svg") no-repeat;
+    background-size: 90%;
+    background-position: center center;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
 .todo-item p {
     width: 90%;
 }
