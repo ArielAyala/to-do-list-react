@@ -1,0 +1,28 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.search-container input {
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #767a7e;
+    text-indent: 1em;
+}
+
+.search-container input:focus {
+    outline-color: #00b5c4;
+}
+
+.search-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 30px;
+}
+
+.search-icon {
+    width: 20px;
+}
